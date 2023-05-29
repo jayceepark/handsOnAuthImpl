@@ -7,10 +7,12 @@ import lombok.ToString;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;
 
+import java.io.Serializable;
+
 @Getter
 @Setter
 @ToString
-public class SecurityUser extends User {
+public class SecurityUser extends User implements Serializable {
 
     private Member member;
 

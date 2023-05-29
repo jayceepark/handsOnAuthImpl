@@ -5,13 +5,14 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Getter
 @Setter
 @ToString
 @Entity
 @Table(name="member")
-public class Member{
+public class Member implements Serializable {
 
     @Id
     private String id;
